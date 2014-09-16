@@ -1,0 +1,60 @@
+body {
+	margin: 10px 0px 0px 0px;
+}
+h3 {
+	margin-top: 10px;
+}
+li#logo {
+	margin: 0px 50px 0px 0px;
+}
+li#logo  img{
+	height: 50px;
+}
+div#main-wrapper {
+	border-top: solid 1px #0095d5;/** hp blue */
+	border-bottom: solid 1px #0095d5;/** hp blue */
+	padding: 10px 0px 10px 0px;
+	margin-top: 10px;
+}
+
+div#main table {
+	border-collapse: collapse;
+}
+	
+div#main table th, div#main table td {
+	border: 1px solid #0095d5;
+	padding: 5px;
+}
+
+label {
+	width: 150px;
+}
+
+table {
+	margin: 10px;
+}
+table#steps td {
+	vertical-align: top;
+}
+
+table#steps td#cell1 {
+	width: 280px;
+}
+table#steps td#cell2 {
+	width: 450px;
+}
+table#steps td#cell3 {
+	width: 300px;
+}
+
+tr#aggregate th {
+	background-color: lightgray;
+}
+
+tr#positive th {
+	background-color: #33FF00;
+}
+
+tr#negative th {
+	background-color: #FF0000;
+}

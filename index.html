@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IDOL OnDemand Workshop</title>	
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="bootstrap-3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap-3.1.1/css/bootstrap-theme.min.css">
+	<!-- IDOL OnDemand - Glass Enterprise Core CSS-->
+	<link rel="stylesheet" href="css/idolondemand-workshop.css">
+  </head>
+  <body>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/third-party-js/jquery-2.1.1.min.js"></script>
+    <script src="bootstrap-3.1.1/js/bootstrap.min.js"></script>
+	<script src='js/third-party-js/jquery.base64.js'></script>
+	
+	<!-- IDOL OnDemand SDK -->
+	<script src="js/idolondemand-config.js"></script>
+	<script src="js/idolondemand-types.js"></script>
+	<script src="js/idolondemand-client.js"></script>
+	
+	<!-- Workshop App -->
+	<script src="js/iod-api-specific-functions/workshop-admin.js"></script>
+	<script src="js/iod-api-specific-functions/workshop-admin-display.js"></script>
+	<script src="js/iod-api-specific-functions/workshop-indexing-list-indexes.js"></script>
+	<script src="js/iod-api-specific-functions/workshop-indexing-create-index.js"></script>
+	<script src="js/iod-api-specific-functions/workshop-indexing-delete-index.js"></script>
+	<script src="js/iod-api-specific-functions/workshop-indexing-add-to-text-index.js"></script>
+	<script src="js/iod-api-specific-functions/workshop-analysis-sentiment-analysis.js"></script>
+	<script src="js/iod-api-specific-functions/workshop-analysis-entity-extraction.js"></script>
+	<script src="js/iod-api-specific-functions/workshop-search-get-content.js"></script>
+	<script src="js/iod-api-specific-functions/workshop-search-find-similar.js"></script>
+	<script src="js/iod-api-specific-functions/workshop-search-query-text-index.js"></script>
+	<script src="js/iod-api-specific-functions/workshop-search-find-related-concepts.js"></script>
+	<script src="js/iod-api-specific-functions/workshop-search-get-parametric-values.js"></script>
+	
+	<script src="js/workshop-my-api-functions.js"></script>
+	
+	<script type="text/javascript">	
+		var indexes = null;
+		var references = null;
+		
+		$(document).ready(function() {			
+			fnDisplayContent();
+		});
+		
+	</script>	
+  </body>
+</html>
