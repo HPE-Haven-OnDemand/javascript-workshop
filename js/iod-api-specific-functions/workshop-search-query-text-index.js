@@ -73,12 +73,33 @@ function fnQueryTextIndexFiles_Callback(response){
 					// custom fields
 					var appName = iodDocument.app_name; 
 					var contentType = iodDocument['content-type']; 
+					if(!contentType){
+						contentType="";
+					}
 					var createdDate = iodDocument.created_date; 
+					if(!createdDate){
+						createdDate="";
+					}
 					var creator = iodDocument.creator; 
+					if(!creator){
+						creator="";
+					}
 					var originalSize = iodDocument.original_size; 
+					if(!originalSize){
+						originalSize="";
+					}
 					var pageCount = iodDocument.page_count; 
-					var iodreference = iodDocument.iodreference; 
+					if(!pageCount){
+						pageCount="";
+					}
+					var iodreference = iodDocument.iodreference;
+					if(!iodreference){
+						iodreference="";
+					}					
 					var content = iodDocument.content; 
+					if(!content){
+						content="";
+					}
 					
 					if(i==0){
 						documentsHTML += "<table>"+

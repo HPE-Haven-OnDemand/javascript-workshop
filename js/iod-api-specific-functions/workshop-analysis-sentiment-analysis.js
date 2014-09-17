@@ -67,7 +67,7 @@ function sentimentAnalysis_Callback(response){
 				});
 				
 				iodSentiments.sort(function(a, b){
-					return a.score-b.score;
+					return b.score-a.score;
 				})
 				
 				sentimentsHtml += "<table>";
