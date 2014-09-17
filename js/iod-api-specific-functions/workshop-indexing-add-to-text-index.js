@@ -18,7 +18,12 @@ function fnAddToTextIndexFiles(indexName, files1){
 		
 		var param2 = {key: "file", value: file1};
 		params.push(param2);
-	
+		
+		var additionalMetaData = "{ \"reference\" : \""+filename+"\" , \"issue\" : \"September 2014\" }";
+		log("Add to Text Index with metadata: "+additionalMetaData);
+		var param3 = {key: "additional_metadata", value: additionalMetaData};
+		params.push(param3);
+		
 		log("filename: "+filename + ", filesize in MB: "+ filesizeInMB);
 		totalsizeOfUploadFiles += parseFloat(filesizeInMB);
 		//log(totalsizeOfUploadFiles.toFixed(2)+" MB");     
@@ -84,9 +89,14 @@ function fnAddToTextIndexUrl(indexName, urlToAdd){
 	var params = new Array();
 	var param1 = {key: "index", value: indexName};
 	params.push(param1);
-	var param1 = {key: "url", value: urlToAdd};
-	params.push(param1);
+	var param2 = {key: "url", value: urlToAdd};
+	params.push(param2);
 	
+	var additionalMetaData = "{ \"reference\" : \""+urlToAdd+"\" , \"issue\" : \"September 2014\" }";
+	log("Add to Text Index with metadata: "+additionalMetaData);
+	var param3 = {key: "additional_metadata", value: additionalMetaData};
+	params.push(param3);
+		
 	var iodClient = new IODClient();
     
     var iodRequest =  iodClient.createIODRequest(IOD.API_ADDTOTEXTINDEX);

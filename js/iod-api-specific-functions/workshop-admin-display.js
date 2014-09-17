@@ -70,7 +70,9 @@ function fnDisplayContent(){
 						"<ul>"+
 						  "<li><a id=\"toc-my-api-one\">My IDOL OnDemand API One</a></li>"+
 						  "<li><a id=\"toc-my-api-two\">My IDOL OnDemand API Two</a></li>"+
-						  "<li><a id=\"toc-my-api-workflow\">My IDOL OnDemand Workflow</a></li>"+
+						  "<li><a id=\"toc-my-api-workflow\">(bonus) My IDOL OnDemand Workflow</a></li>"+
+						  "<li>(bonus) <a href=\"https://www.idolondemand.com/developer/apis/createconnector#overview\" target=\"_blank\">Create Connector</a> via UI</li>"+
+						  "<li>(bonus) <a href=\"https://www.idolondemand.com/developer/apis/startconnector#overview\" target=\"_blank\">Start Connector</a> via UI</li>"+
 						"</ul>" +
 					"</td>"+
 					"</tr>" +
@@ -451,7 +453,7 @@ function displayFindSimilarDocuments(){
 		"<div id=\"div-find-similar-documents\">" +
 		"<h3>"+title+"</h3>" +
 		"<label for=\"index-name\">Index:</label>" +indexesHTML+ "<br>" +
-		"<label for=\"reference\">By reference:</label>" +referencesHTML+ "<br>" +
+		//"<label for=\"reference\">By reference:</label>" +referencesHTML+ "<br>" +
 		"<label for=\"url\">By URL:</label>" +urlHTML+ "<br>" +
 		"<input type=\"button\" value=\"Find Similar Documents\" id=\"btn-find-similar-documents\">" +
 		"</div><br>";
